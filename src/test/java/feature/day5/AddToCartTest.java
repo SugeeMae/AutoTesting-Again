@@ -20,11 +20,11 @@ import java.util.Map;
 public class AddToCartTest {
     public static void main(String[] args) {
         // Đường dẫn file Excel
-        String excelFilePath = "dataLogin.xlsx";
+        String excelFilePath = "dataShoppingItems.xlsx";
         String sheetName = "Sheet1"; // Hoặc thay bằng tên sheet bất kỳ trong file
 
         // Đọc dữ liệu từ file Excel
-        List<Map<String, String>> excelData = untils.ExcelUtils.readExcelData(excelFilePath, sheetName);
+        List<Map<String, String>> excelData = utils.ExcelUtils.readExcelData(excelFilePath, sheetName);
 
         // Thiết lập WebDriver (trình duyệt Chrome) và login web
         WebDriver driver = new ChromeDriver();
